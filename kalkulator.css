@@ -1,0 +1,89 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;
+}
+.container{
+    width: 420px;
+    border: 2px solid black;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    font-size: 1.3em;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #0059b3, #00264d);
+    box-shadow: 8px 8px 4px rgba(0,0,0,0.5);
+}
+.layar{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.layar input{
+    width: 82%;
+    height: 37px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    padding: 2px;
+    text-align: center;
+    font-size: 1.1em;
+    background: white;
+    color: black;
+}
+.wrap-angka{
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap-angka .angka{
+    text-align: center;
+    width: calc(32% - 30px);
+    height: 37px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9fe8e8, aliceblue);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.wrap-angka .bawah{
+    flex-basis: calc(50% - 36px);
+}
+.wrap-op{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.wrap-op .op{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    height: 37px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #696969, #242424);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    color: white;
+}
+.angka:active, .op:active{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5) inset;
+}
